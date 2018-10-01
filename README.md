@@ -5,8 +5,10 @@ Details: Between 10-20 players will all interact on a fixed size grid, which fun
 
 Demonstrations:
 Here is how a snake would steal the tail of another snake
-[before-contact](before-contact.png)
-[after-contact](after-contact.png)
+
+![before-contact](before-contact.PNG)
+
+![after-contact](after-contact.PNG)
 
 Here is a snake matching the desired shape
-[snake-shape](snake-shape-final.png)
+![snake-shape](snake-shape-final.PNG)
