@@ -1,31 +1,10 @@
 html, body { padding: 0; margin: 0; width: 100%; height: 100%; }
-/*tml {
-  font-size: 10px;
-  height: 100vh;
-  font-family: 'Open Sans', sans-serif;
-}
-*/
 
 h1 {
   font-family: "Arial";
   font-size: 60px;
   text-align: center;
 }
-
-p {
-  font-family: "Arial";
-  font-size: 16px;  
-  line-height: 2;
-  letter-spacing: 1px;
-}
-
-a {
-  font-size: 16px;  
-  line-height: 2;
-  letter-spacing: 1px;
-}
-
-
 
 html {
   background-color: rgb(54, 54, 54);
@@ -41,95 +20,69 @@ body {
  border-right: 6px; 
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-
 .square {
   float:left;
   position: relative;
   width: 100%;
-  padding-bottom: 100%; /* = width for a 1:1 aspect ratio */
+  padding-bottom: 100%;
   margin:1.66%;
   margin-bottom: 1.5em;
-  /* overflow: hidden;*/
 }
 
 .content {
- /* padding: 0;
-  margin: auto;
-  width: 35vw;
-  height: 35vw;*/
- /* display: block; */
+
   height: 100%;
   width: 100%;
   position: absolute;
   text-align: center;
 }
 
-canvas {
+#snakeCanvas {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
   background: white;
   border: 5px solid black;
-  margin-top: 2em;
-}
-/*
-.table{
-  display:table;
-  height:100%;
-  width:100%;
-}
-.table-cell{
-  display:table-cell;
-  vertical-align:middle;
-  height:100%;
-  width:100%;
-} */
-
-h1 {
-  margin: 0;
-  padding: 20px 0;  
-  color: white;
 }
 
-input, select, #solve, #restart {
-  margin: 1%;
-  margin-left: 0;
+#winCanvas {
+  float: right;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background: white;
+  border: 5px solid black;
 }
 
-.gridInfo {
+#winContainer {
+  float:right;
   position: absolute;
+  width: 15%;
+  padding-bottom: 15%;
+  left: 85%;
+  margin: 0;
+  margin-top: 2%;
+}
+
+#winContent {
+  width: 100%;
+  height: 100%;
+}
+
+#playerRanks {
   color: white;
+  width: 15%;
+  right: 85%;
+  background: rgb(54, 54, 54);
+  position: absolute;
   margin: 0;
-  white-space: nowrap;
-  overflow: hidden;
+  margin-top: 2%;
+  font-family: "Arial";
+  font-size: 14px;  
+  line-height: 1.5;
+  letter-spacing: 1px;
 }
 
-#curDimen {
-  display: inline;
-  font-size: 28px
-}
-
-#curDelay {
-  display: inline;
-  font-size: 28px
-}
-
-#dimenText{
-  margin: 0;
-}
-
-#algoText{
-  margin: 0;
-}
-
-#dimensions {
-  margin-top: 0;
-}
-
-#delay {
-  margin-top: 0;
+td {
+  border-bottom: 1px solid white;
 }

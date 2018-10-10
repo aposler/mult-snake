@@ -3,63 +3,38 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Pathing Algorithms</title>
+  <title>Snake Game</title>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="styles/style.css" />
   <script src="scripts/main.js"></script>
 </head>
 
 <body>
-  <h1>Pathing Algorithm Exploration</h1>
-  <p>This page allows you to explore the difference between 4 pathing algorithms, A*, Breadth
-    First, Depth First, and Greedy Best First. Click and drag on the graphs below to create
-    obstructions, which the algorithms will avoid when creating their paths. Use the top
-    slider to contol the grids dimensions. Use the Username and grid name controls to save
-    your created grids and load them back later. Use the second slider to control the delay
-    between pathing algorithm iterations, and the buttons below that to manually control
-    the algorithms.
-  </p>
-  <br>
-  <div style="display:inline;">
-    <p id="dimenText">Dimensions</p>
-    <input type="range" min="2" max="50" value="10" class="slider" id="dimensions">
-    <p id="curDimen">10</p>
-  </div>
-  <br>
-  <!--<button type="button" id="enterDimen">Enter Dimensions</button><br>-->
-  <input type="text" name="username" id="username" placeholder="username">
-  <button type="button" id="enterUser">Enter Username</button>
-  <br>
-  <input type="text" name="gridName" id="gridName" placeholder="grid name [optional]">
-  <button type="button" id="save">Save Grid</button>
-  <br>
-  <select id="nameBox">
-    <option value="" disabled selected hidden>Please Enter Username to Populate</option>
-  </select>
-  <button type="button" id="load">Load Grid</button>
-  <br>
-  <div style="display:inline;">
-    <p id="algoText">Algorithm Delay</p>
-    <input type="range" min="2" max="200" value="50" class="slider" id="delay">
-    <p id="curDelay">25</p>
-  </div>
-  <br>
-  <button type="button" id="pause">Pause</button>
-  <button type="button" id="continue">Continue</button>
-  <button type="button" id="step">Step</button>
-  <br>
-  <button type="button" id="stop">Stop</button>
-  <button type="button" id="restart">Clear</button>
-  <button type="button" id="solve">Solve</button>
-  <br>
-  <div class="square">
-    <div class="content">
-      <p class="gridInfo" id="greedyInfo">Snake</p>
-      <canvas id="snakeCanvas" class="grid-item"></canvas>
+  <h1>Multiplayer Snake Game</hi>
+    <br>
+    <input type="text" name="username" id="username" placeholder="username">
+    <button type="button" id="connect">Connect</button>
+    <br>
+    <div class="square" id='mainContainer'>
+      <div class="content">
+        <canvas id="snakeCanvas"></canvas>
+      </div>
     </div>
-  </div>
-  <script src="/socket.io/socket.io.js"></script>
-  <script src="scripts/main.js"></script>
+
+    <div class="square" id='winContainer'>
+      <div class="content" id='winContent'>
+        <canvas id="winCanvas"></canvas>
+      </div>
+    </div>
+
+    <table id="playerRanks">
+      <tr>
+        <td>Player Rankings go Here</td>
+      </tr>
+    </table>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>
