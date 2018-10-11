@@ -1,66 +1,30 @@
-# cs4241-FinalProject
+cs4241-FinalProject
+===
+## Alex Osler | Multiplayer Snake Game With a Twist
+This was all done by Alex Osler
 
-For your final project, you'll implement a course project that exhibits your mastery of the course materials. 
-This project gives you an opportunity to be creative and to pursue individual research and learning.
+My project is pretty similar to my proposal, with some slight changes. For a quick recap,
+in my proposal I outlined a multiplayer snake game with up to 10-20 players. The game would feature
+a few tweaks, mainly the ability to "eat" the tail of another snake, and there being an
+end goal of forming your snake into a certain shape. The only way I have deviated from this outline
+is that, when you "eat" an opposing snakes tail, their tail values simply dissapear rather than being
+added to yours. This is to avoid the issue of the tail expanding back into opposing players, which
+is basically impossible to implement. The features here are rather simple, but hopefully plenty
+enjoyable. You enter the game by giving a username, and are then placed into one of potentially multiple
+currently ongoing games. You then play like normal until you either contact another snakes head,
+contact your own body, or someone achieves the desired shape, which is shown in the top right corner.
+When any of these conditions are met, the game ends and you receive a message describing why. In the case
+of the first 2, only you and potentially the snake you impacted have your game end, and in the last
+situation the entire game is notified and ended. I have included a leaderboard for additional play options
+if desired, but I simply did not have the time to explicity code in an endless mode. Hopefully you enjoy
+the game!
 
-## General description
+## Technical Achievements
+- **Tech Achievement 1**: Implementing a real time snake game
+- **Tech Achievement 2**: Properly implementing hit detection between multiple objects moving at the same time
+- **Tech Achievement 3**: Generating the winning snake with specific parameters to make it suitable for playing
 
-Your project should consist of a complete Web application. 
-The site must exhibit facets of the three main sections of the course material:
+### Design/Evaluation Achievements
+- **Design Achievement 1**: I designed the tweaks to the game
+- **Design Achievement 1**: The website is easy to use and plenty functional
 
-- Static Web page content and design. You should have a project that is well-designed, easily navigable, and exhibits good human-computer interaction.
-- Dynamic behavior implemented with JavaScript and possibly other JavaScript librarires.
-- Server-side programming. Typically this will take the form of some sort of persistent data and possibly server-side computation.
-
-Additionally, you should incorporate features that you independently research, design, and implement for your project.
-
-## Project ideation
-
-Excellent projects serve someone/some group: define your users and stakeholders. 
-Don't just create a webapp with a pile of features.
-I encourage you to identify projects that will have impact.
-
-Create something useful for a cause or hobby you care about; something that will help you grow as a student.
-Also see our [hall of fame](https://cs4241-18a.github.io/fame/), with notable projects from prior offerings of the course.
-
-## Logistics
-
-### Team size
-Students are encouraged to work in teams of 1-4 students for the project. 
-This will allow you to build a good project without expending an excessive amount of effort. 
-While I would expect a team of four students to produce a project with more features, I expect a single person project to exhibit all of the required facets described above.
-
-### Deliverables
-
-__Proposal:__ 
-Provide an outline of your project direction and the names of the team members. 
-The outline should have enough detail so that staff can determine if it meets the minimum expectations, or if it goes too far to be reasonable by the deadline.
-This file must be named proposal.md so we can find it.
-Submit a PR to turn it in.
-
-There are no other scheduled checkpoints for your project. 
-You must be done in time to present before the final project demo day. 
-
-#### Turning in Your Outline / Project
-
-**NOTE: code is due before the project presentation day due to the end of term / grading schedule constraints**
-Submit a second PR on the final project repo to turn in your app and code.
-
-Deploy your app, in the form of a webpage, to Heroku or some other service.
-Folks on the same team do not need to post the same webpage, but must instead clearly state who is on the team in their proposal.
-(Staff will use the proposal to build the grading sheet.)
-
-## Final Presentation
-
-Presentations will occur during the final week of class.
-
-As for the presentations, we will take over a different room on WPI's campus, with tables.
-You'll set up and demo to folks who stop by.
-You'll demo to staff as part of your grade.
-
-## FAQs
-
-- **Can I open-source my project?** You may open source your project after the class ends. 
-I encourage it. While other course code should be kept hidden, this is a case where others can and should learn and draw inspiration from everyone else.
-
-- **Can I use XYZ framework?** You can use any web-based frameworks or tools available.

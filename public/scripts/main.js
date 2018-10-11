@@ -23,6 +23,8 @@ function mainFunc() {
     initiated = true;
     initGrid(snakeCanvas);
     document.addEventListener('keydown', function (event) {
+        let activeEl = document.activeElement;
+        let username = document.getElementById("username");
         switch (event.keyCode) {
             case 65: // A
                 moveDir = 'left';
@@ -35,6 +37,31 @@ function mainFunc() {
                 break;
             case 83: // S
                 moveDir = 'down';
+                break;
+            //The rest are arrow keys
+            case 37:
+                moveDir = 'left'
+                if (activeEl !== username) {
+                    event.preventDefault();
+                }
+                break;
+            case 38:
+                moveDir = 'up'
+                if (activeEl !== username) {
+                    event.preventDefault();
+                }
+                break;
+            case 39:
+                moveDir = 'right'
+                if (activeEl !== username) {
+                    event.preventDefault();
+                }
+                break;
+            case 40:
+                moveDir = 'down'
+                if (activeEl !== username) {
+                    event.preventDefault();
+                }
                 break;
         }
         if (socket) {
