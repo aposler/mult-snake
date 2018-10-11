@@ -3,6 +3,8 @@ cs4241-FinalProject
 ## Alex Osler | Multiplayer Snake Game With a Twist
 This was all done by Alex Osler
 
+The project is available at https://fp-aposler.herokuapp.com/
+
 My project is pretty similar to my proposal, with some slight changes. For a quick recap,
 in my proposal I outlined a multiplayer snake game with up to 10-20 players. The game would feature
 a few tweaks, mainly the ability to "eat" the tail of another snake, and there being an
