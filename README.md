@@ -18,13 +18,3 @@ of the first 2, only you and potentially the snake you impacted have your game e
 situation the entire game is notified and ended. I have included a leaderboard for additional play options
 if desired, but I simply did not have the time to explicity code in an endless mode. Hopefully you enjoy
 the game!
-
-## Technical Achievements
-- **Tech Achievement 1**: Implementing a real time snake game
-- **Tech Achievement 2**: Properly implementing hit detection between multiple objects moving at the same time
-- **Tech Achievement 3**: Generating the winning snake with specific parameters to make it suitable for playing
-
-### Design/Evaluation Achievements
-- **Design Achievement 1**: I designed the tweaks to the game
-- **Design Achievement 1**: The website is easy to use and plenty functional
-
