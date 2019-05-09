@@ -1,5 +1,3 @@
-cs4241-FinalProject
-===
 ## Alex Osler | Multiplayer Snake Game With a Twist
 This was all done by Alex Osler
 
